@@ -21,15 +21,12 @@
                 <div class="mt-4 grid text-lg">
                     <a href="{{route('dashboard')}}" class="pl-4 hover:bg-gray-200 py-2 border-b">Dashboard</a>
                     <a href="{{route('category.index')}}" class="pl-4 hover:bg-gray-200 py-2 border-b">Categories</a>
-                    <a href="" class="pl-4 hover:bg-gray-200 py-2 border-b">Products</a>
+                    <a href="{{route('product.index')}}" class="pl-4 hover:bg-gray-200 py-2 border-b">Products</a>
                     <a href="" class="pl-4 hover:bg-gray-200 py-2 border-b">Orders</a>
-
-                   <form action="{{route('logout')}}" method="POST"
-                   class="pl-4 hover:bg-gray-200 py-2 border-b">
+                    <form action="{{route('logout')}}" method="POST" class="pl-4 hover:bg-gray-200 border-b">
                         @csrf
                         <button type="submit" class="w-full text-left py-2">Logout</button>
                     </form>
-
                 </div>
             </div>
             <div class="p-4 flex-1">
